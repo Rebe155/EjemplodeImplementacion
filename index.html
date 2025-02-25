@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Películas de Marvel</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="https://www.marvel.com/favicon.ico" type="image/x-icon">
+  <link rel="manifest" href="manifest.json"> <!-- Aquí se vincula el manifest -->
+  <script>
+    if("serviceWorker" in navigator){
+        navigator.serviceWorker.register("sw.js");
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+   
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="personajes.html">Personajes</a></li>
+      <li><a href="peliculas.html">Orden Cronológico</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="description">
+      <h2>Bienvenido al Universo Cinematográfico Marvel</h2>
+      <p>Sumérgete en el increíble mundo de Marvel. Descubre curiosidades, noticias y disfruta del carrusel de películas del MCU.</p>
+    </div>
+
+    <!-- Carrusel -->
+    <div class="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://wallpapercat.com/w/full/5/0/f/61165-3840x2160-desktop-4k-marvel-background-photo.jpg" alt="Captain America: The First Avenger">
+          </div>
+          <div class="carousel-item">
+            <img src="https://wallpapers.com/images/hd/glorious-avengers-marvel-laptop-rs69vylzkriz2fef.jpg" alt="Captain Marvel">
+          </div>
+          <div class="carousel-item">
+            <img src="https://wallpapercat.com/w/full/4/5/e/119930-3840x2160-desktop-4k-avengers-wallpaper-image.jpg" alt="Iron Man">
+          </div>
+        </div>
+        <button class="carousel-control prev" id="prevBtn">&#10094;</button>
+        <button class="carousel-control next" id="nextBtn">&#10095;</button>
+      </div>
+      
+    <!-- Citas Aleatorias -->
+    <div class="quotes-section">
+      <h2>Frase célebre de un personaje</h2>
+      <p id="quoteText">Haz clic en el botón para ver una cita.</p>
+      <button id="quoteButton">Dar cita</button>
+    </div>
+
+    <!-- Curiosidades -->
+    <div id="curiosities" class="curiosities">
+      <h2>Datos Curiosos</h2>
+      <div class="curiosity-grid">
+        <div class="curiosity-card">
+          <h3>Curiosidad 1</h3>
+          <p class="curiosity-text" style="display:none;">El personaje de Iron Man fue inspirado en el escritor Stan Lee y el actor Robert Downey Jr.</p>
+          <button class="show-more">Leer más</button>
+        </div>
+        <div class="curiosity-card">
+          <h3>Curiosidad 2</h3>
+          <p class="curiosity-text" style="display:none;">La película de Avengers: Endgame es la más taquillera de toda la saga Marvel.</p>
+          <button class="show-more">Leer más</button>
+        </div>
+        <div class="curiosity-card">
+          <h3>Curiosidad 3</h3>
+          <p class="curiosity-text" style="display:none;">El nombre original de Hulk era "The Incredible Hulk", pero después se acortó a "Hulk".</p>
+          <button class="show-more">Leer más</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 udb. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

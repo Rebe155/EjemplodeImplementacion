@@ -1,0 +1,32 @@
+{
+    "name": "Universo Cinematográfico Marvel",
+    "short_name": "Marvel App",
+    "theme_color": "#6d1818",
+    "description": "Descubre la aventura y el legado de los héroes del Universo Cinematográfico Marvel.",
+     "background_color": "#1c1c1c",
+    "orientation": "portrait-primary",
+    "scope": "./",
+    "start_url": "./",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "./icon-marvel.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "screenshots": [
+    {
+      "src": "screenshot-mobile.png",
+      "sizes": "1125x508",
+      "type": "image/png",
+      "form_factor": "wide"
+
+    },
+    {
+      "src": "screenshot-desktop.png",
+       "sizes": "587x806",
+      "type": "image/png"
+    }
+  ]
+  }
